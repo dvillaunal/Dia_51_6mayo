@@ -1,0 +1,16 @@
+Profe trate de solucionar el error, pero la verdad ya no se que intentar, ahhh en el visual studio code, en RStudio hasta en el jupyter corre de maravilla, no me sale este error, en los progrmas anteriores aparece:
+
+> rbind(df, list(5, "OneForAll", T, 999.99))
+
+OUTPUT:
+
+   N°     Anime Logical      XP Clasificación
+1  1    Nezuko    TRUE   12.12            C+
+2  2   Kimetsu   FALSE   75.32           C++
+3  3   Tanjiro   FALSE    3.14           A++
+4  4  Midoriya   FALSE    2.71            A+
+5  5 OneForAll    TRUE 9999.99            B+
+
+
+nota: sino se ve bien, expanda la pantalla,
+hata que todo esta liena se vea como una sola (No dos).
