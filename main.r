@@ -28,8 +28,8 @@ z <- c(T, F, F, F)
 w <- c(12.12,75.32,3.14,2.71)
 cat("\n> x:", x, "\n> y:", y, "\n> z:", z, "\n> w:", w)
 
-## Unoir las variables para crear un dataframe:
-message("\n## Unoir las variables para crear un dataframe:")
+## Unir las variables para crear un dataframe:
+message("\n## Unir las variables para crear un dataframe:")
 
 df <- data.frame(x,y,z,w)
 cat("\ndf <- data.frame(x,y,z,w)", "\n \nOUTPUT:\n \n")
@@ -51,9 +51,6 @@ cat("\n# Ahora Observemos su estructura con str():")
 
 str(df)
 
-
-
-
 ## ------------------------------------------------------------------------------------------
 # Acceder a los elemnetos como lista diferentes maneras:
 message("\n# Acceder a los elemnetos como lista diferentes maneras:")
@@ -72,8 +69,8 @@ print(df[[2]])
 
 
 ## ------------------------------------------------------------------------------------------
-# Veamosla comparación:
-message("\n# Veamosla comparación:")
+# Veamos la comparación:
+message("\n# Veamos la comparación:")
 
 cat("\n> str(df)","\n \nOUTPUT:\n \n")
 print(str(df))
@@ -83,14 +80,14 @@ cat("\n> head(df)","\n \nOUTPUT:\n \n")
 print(head(df))
 
 
-# Selenccionando la 2da y 3ra fila:
-cat("\n# Selenccionando la 2da y 3ra fila:")
+# Seleccionando la 2da y 3ra fila:
+cat("\n# Seleccionando la 2da y 3ra fila:")
 
 cat("\n> df[2:3,","\n \nOUTPUT:\n \n")
 print(df[2:3,])
 
 
-# oxdenar por operadores lógicos:
+# ordenar por operadores lógicos:
 message("\n# ordenar por operadores lógicos:")
 
 cat("\n> df[df <30]","\n \nOUTPUT:\n \n")
@@ -115,8 +112,10 @@ print(df)
 
 ## Ahora observamos nuestro renombramiento:
 cat("\n> df[3, \"Anime\"] <- \"Tanjiro\"","\n \nOUTPUT:\n \n")
-
-df[3, "Anime"] <- "Tanjiro"
+#df[3, "Anime"] <- "Tanjiro"
+df[3, "Anime"] <- c("Tanjiro")
+df[3, "Logical"] <-T
+df[3, "XP"] <-5.00
 print(df[3, "Anime", drop=F])
 print(df)
 

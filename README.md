@@ -17,7 +17,7 @@ __Protocolo:__
 
 Un Data Frame es una lista de vectores de igual longitud. Una matriz sólo contiene un tipo de datos, mientras que un Data Frame acepta diferentes tipos de datos (numéricos, de caracteres, de factores, etc.).
 
-# Cómo crear un Data Frame
+# ¿Cómo crear un Data Frame?
 
 Podemos crear un Data Frame en R pasando la variables x,y,z,w a la función `data.frame()`. Podemos crear un Data Frame y nombrar las columnas con `name()` o simplemente especificar el nombre de las variables.
 
@@ -129,14 +129,14 @@ cat("\n> head(df)","\n \nOUTPUT:\n \n")
 print(head(df))
 
 
-# Selenccionando la 2da y 3ra fila:
-cat("\n# Selenccionando la 2da y 3ra fila:")
+# Seleccionando la 2da y 3ra fila:
+cat("\n# Seleccionando la 2da y 3ra fila:")
 
 cat("\n> df[2:3,","\n \nOUTPUT:\n \n")
 print(df[2:3,])
 
 
-# oxdenar por operadores lógicos:
+# ordenar por operadores lógicos:
 message("\n# ordenar por operadores lógicos:")
 
 cat("\n> df[df <30]","\n \nOUTPUT:\n \n")
@@ -148,7 +148,7 @@ df[df <30]
 
 
 Podemos ver en el último caso que el tipo retornado es un vector que extraeremos los datos de una sola columna.
-
+(arriba)
 ```{r}
 # Llamar a los elementos del data frame:
 message("\n# Llamar a los elementos del data frame:")
@@ -193,7 +193,7 @@ print(df)
 Simalarmente podemos añadir columnas con `cbind()`
 
 ```{r}
-# Añandiendo componentes con cbind():
+# Añadiendo componentes con cbind():
 cat("\n# Añandiendo componentes con cbind():")
 cat("\n> rbind(df, list(5, \"OneForAll\", T, 9999.99))","\n \nOUTPUT:\n \n")
 
